@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservas Hostal HDQ</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Reservas Hostal HDQ</h1>
+    <form id="reservaForm">
+      <label>Nombre completo: <input type="text" name="nombre" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Teléfono: <input type="tel" name="telefono" required></label>
+      <label>Habitación:
+        <select name="habitacion" required>
+          <option value="101">101 (1 individual) - $30.000</option>
+          <option value="102">102 (1 matrimonial + 3 individuales) - $71.400</option>
+          <option value="103">103 (1 matrimonial) - $35.700</option>
+          <option value="201">201 (4 camas) - $71.400</option>
+          <option value="202">202 (1 matrimonial) - $40.000</option>
+          <option value="203">203 (1 matrimonial) - $35.700</option>
+          <option value="204">204 (3 individuales) - $53.550</option>
+          <option value="205">205 (1 matrimonial + 1 individual) - $53.550</option>
+          <option value="206">206 (3 matrimoniales, 4 personas) - $71.400</option>
+          <option value="207">207 (3 matrimoniales, 4 personas) - $71.400</option>
+        </select>
+      </label>
+      <label>Fecha de llegada: <input type="date" name="fecha_llegada" required></label>
+      <label>Fecha de salida: <input type="date" name="fecha_salida" required></label>
+      <label>¿Desea desayuno? <input type="checkbox" name="desayuno" value="Sí"></label>
+      <label>Hora estimada de llegada: <input type="time" name="hora_llegada" required></label>
+      <button type="submit">Reservar ahora</button>
+    </form>
+    <div id="respuesta"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
