@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal HDQ - Mejor Hostal en Concepción Sector Collao | Hostales Concepción</title>
+    <meta name="description" content="Hostal HDQ en Concepción, Chiloe 1130 sector Collao. El mejor hostal en Concepción con habitaciones cómodas desde $40.000. Reserva ahora tu estadía en hostales Concepción.">
+    <meta name="keywords" content="hostal concepción, hostales concepción, hostal en concepción, hostales en concepción, hostal collao, hostales collao, hostal en collao, hostales en collao, hostal hdq, alojamiento concepción">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hostal HDQ">
+    <meta name="geo.region" content="CL-BI">
+    <meta name="geo.placename" content="Concepción, Chile">
+    <meta name="geo.position" content="-36.8201;-73.0444">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hostal HDQ - Mejor Hostal en Concepción Sector Collao">
+    <meta property="og:description" content="Hostal HDQ en Concepción, sector Collao. Habitaciones cómodas desde $40.000. Tu mejor opción en hostales Concepción.">
+    <meta property="og:type" content="business.hotel">
+    <meta property="og:url" content="https://hostalhdq.cl">
+    <meta property="og:image" content="https://hostalhdq.cl/images/hostal-hdq-fachada.jpg">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Hostal HDQ",
+        "description": "Hostal en Concepción sector Collao con habitaciones cómodas y precios accesibles",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chiloe 1130",
+            "addressLocality": "Concepción",
+            "addressRegion": "Biobío",
+            "postalCode": "4070000",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -36.8201,
+            "longitude": -73.0444
+        },
+        "telephone": "+56-41-2345678",
+        "priceRange": "$40,000 - $80,000 CLP",
+        "starRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5"
+        },
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "WiFi"},
+            {"@type": "LocationFeatureSpecification", "name": "Estacionamiento"},
+            {"@type": "LocationFeatureSpecification", "name": "Recepción 24h"}
+        ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo h1 {
+            color: #667eea;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') bottom/cover no-repeat;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInUp 1s ease;
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: slideInUp 1s ease 0.3s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+            animation: slideInUp 1s ease 0.6s both;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(238, 90, 36, 0.6);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: white;
+            position: relative;
+        }
+        
+        .about::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23667eea" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') bottom/cover no-repeat;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .location-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .location-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .location-info p {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        /* Rooms Section */
+        .rooms {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 3rem;
+        }
+        
+        .rooms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .room-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .room-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .room-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .room-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .room-type {
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .room-capacity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .room-body {
+            padding: 1.5rem;
+        }
+        
+        .room-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        .room-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        .status-available {
+            background: #2ecc71;
+        }
+        
+        .status-occupied {
+            background: #e74c3c;
+        }
+        
+        .status-maintenance {
+            background: #f39c12;
+        }
+        
+        .reserve-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .reserve-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .reserve-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        /* Check-in Management */
+        .checkin-management {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .management-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .checkin-form, .room-status-panel {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+        }
+        
+        .status-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .status-card {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .status-card.available {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+        
+        .status-card.occupied {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+        }
+        
+        .status-card.maintenance {
+            background: linear-gradient(45deg, #f39c12, #d68910);
+        }
+        
+        .status-card h4 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .footer-section p, .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+        
+        .footer-section a:hover {
+            color: #667eea;
+        }
+        
+        /* Animations */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .rooms-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .management-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .status-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Hostal HDQ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#checkin">Check-in</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Hostal HDQ Concepción</h1>
+            <p>El mejor hostal en Concepción, sector Collao. Comodidad y precio justo en el corazón de la ciudad.</p>
+            <a href="#habitaciones" class="cta-button">Ver Habitaciones</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Bienvenido a Hostal HDQ</h2>
+                    <p>Somos el <strong>mejor hostal en Concepción</strong>, ubicado estratégicamente en el sector Collao. Con años de experiencia en el rubro hotelero, nos hemos consolidado como una de las mejores opciones en <strong>hostales en Concepción</strong>.</p>
+                    <p>Nuestro <strong>hostal en Concepción</strong> ofrece habitaciones cómodas, limpias y a precios accesibles. Nos especializamos en brindar un servicio personalizado que hace que cada huésped se sienta como en casa.</p>
+                    <p>Como uno de los <strong>hostales en Collao</strong> más reconocidos, nos enorgullece ofrecer la mejor relación calidad-precio de la zona.</p>
+                </div>
+                <div class="location-info">
+                    <h3>📍 Nuestra Ubicación</h3>
+                    <p><strong>Dirección:</strong> Chiloe 1130, Sector Collao</p>
+                    <p><strong>Ciudad:</strong> Concepción, Región del Biobío</p>
+                    <p><strong>País:</strong> Chile</p>
+                    <p><strong>Teléfono:</strong> +56 41 234 5678</p>
+                    <p><strong>Email:</strong> reservas@hostalhdq.cl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitaciones" class="rooms">
+        <div class="container">
+            <h2 class="section-title">Nuestras Habitaciones</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Descubre nuestras cómodas habitaciones en el mejor <strong>hostal en Collao</strong>. Todas nuestras habitaciones cuentan con WiFi gratuito, baño privado y limpieza diaria.</p>
+            
+            <div class="rooms-grid" id="roomsGrid">
+                <!-- Las habitaciones se generarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="checkin" class="checkin-management">
+        <div class="container">
+            <h2 class="section-title">Gestión de Habitaciones</h2>
+            
+            <div class="management-grid">
+                <div class="checkin-form">
+                    <h3>Check-in / Check-out</h3>
+                    <form id="checkinForm">
+                        <div class="form-group">
+                            <label for="roomSelect">Habitación:</label>
+                            <select id="roomSelect" required>
+                                <option value="">Seleccionar habitación</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guestName">Nombre del huésped:</label>
+                            <input type="text" id="guestName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guestRut">RUT:</label>
+                            <input type="text" id="guestRut" placeholder="12.345.678-9" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkInDate">Fecha de ingreso:</label>
+                            <input type="date" id="checkInDate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="checkOutDate">Fecha de salida:</label>
+                            <input type="date" id="checkOutDate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="action">Acción:</label>
+                            <select id="action" required>
+                                <option value="">Seleccionar acción</option>
+                                <option value="checkin">Check-in</option>
+                                <option value="checkout">Check-out</option>
+                                <option value="maintenance">Mantenimiento</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Procesar</button>
+                    </form>
+                </div>
+                
+                <div class="room-status-panel">
+                    <h3>Estado de Habitaciones</h3>
+                    <div class="status-summary">
+                        <div class="status-card available">
+                            <h4 id="availableCount">0</h4>
+                            <p>Disponibles</p>
+                        </div>
+                        <div class="status-card occupied">
+                            <h4 id="occupiedCount">0</h4>
+                            <p>Ocupadas</p>
+                        </div>
+                        <div class="status-card maintenance">
+                            <h4 id="maintenanceCount">0</h4>
+                            <p>Mantenimiento</p>
+                        </div>
+                    </div>
+                    <div id="roomStatusList">
+                        <!-- Lista detallada de estados se generará aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hostal HDQ</h3>
+                    <p>El mejor <strong>hostal en Concepción</strong> te espera. Ubicados en el corazón del sector Collao, ofrecemos la mejor experiencia de alojamiento en la ciudad.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Chiloe 1130, Sector Collao<br>Concepción, Chile</p>
+                    <p>📞 +56 41 234 5678</p>
+                    <p>✉️ reservas@hostalhdq.cl</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horarios</h3>
+                    <p>Recepción: 24 horas</p>
+                    <p>Check-in: 14:00 hrs</p>
+                    <p>Check-out: 12:00 hrs</p>
+                    <p>Limpieza: 09:00 - 13:00 hrs</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <p>• WiFi gratuito</p>
+                    <p>• Baño privado</p>
+                    <p>• Limpieza diaria</p>
+                    <p>• Estacionamiento</p>
+                    <p>• Recepción 24h</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border: none; border-top: 1px solid #667eea;">
+            <p>&copy; 2025 Hostal HDQ - Todos los derechos reservados. El mejor hostal en Concepción, sector Collao.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Datos de las habitaciones
+        const rooms = [
+            { number: '101', type: 'Doble', capacity: 2, price: 40000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '102', type: 'Doble / 2 ambientes', capacity: 4, price: 80000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '103', type: 'Doble', capacity: 2, price: 40000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '201', type: 'Doble / 2 ambientes', capacity: 4, price: 80000, status: 'occupied', guest: 'Juan Pérez', checkIn: '2025-01-15', checkOut: '2025-01-18' },
+            { number: '202', type: 'Matrimonial', capacity: 2, price: 40000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '203', type: 'Matrimonial', capacity: 2, price: 40000, status: 'maintenance', guest: null, checkIn: null, checkOut: null },
+            { number: '204', type: 'Triple', capacity: 3, price: 60000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '205', type: 'Triple', capacity: 3, price: 60000, status: 'occupied', guest: 'María González', checkIn: '2025-01-14', checkOut: '2025-01-20' },
+            { number: '206', type: 'Grupal', capacity: 4, price: 80000, status: 'available', guest: null, checkIn: null, checkOut: null },
+            { number: '207', type: 'Grupal', capacity: 4, price: 80000, status: 'available', guest: null, checkIn: null, checkOut: null }
+        ];
+
+        // Función para formatear precio
+        function formatPrice(price) {
+            return new Intl.NumberFormat('es-CL', {
+                style: 'currency',
+                currency: 'CLP',
+                minimumFractionDigits: 0
+            }).format(price);
+        }
+
+        // Función para obtener el texto del estado
+        function getStatusText(status) {
+            switch(status) {
+                case 'available': return 'Disponible';
+                case 'occupied': return 'Ocupada';
+                case 'maintenance': return 'Mantenimiento';
+                default: return 'Desconocido';
+            }
+        }
+
+        // Función para renderizar las habitaciones
+        function renderRooms() {
+            const roomsGrid = document.getElementById('roomsGrid');
+            const roomSelect = document.getElementById('roomSelect');
+            
+            roomsGrid.innerHTML = '';
+            roomSelect.innerHTML = '<option value="">Seleccionar habitación</option>';
+
+            rooms.forEach((room, index) => {
+                // Crear tarjeta de habitación
+                const roomCard = document.createElement('div');
+                roomCard.className = 'room-card';
+                roomCard.innerHTML = `
+                    <div class="room-header">
+                        <div class="room-number">Habitación ${room.number}</div>
+                        <div class="room-type">${room.type}</div>
+                        <div class="room-capacity">👥 Capacidad: ${room.capacity} personas</div>
+                    </div>
+                    <div class="room-body">
+                        <div class="room-price">${formatPrice(room.price)}/noche</div>
+                        <div class="room-status">
+                            <span class="status-indicator status-${room.status}"></span>
+                            <span>${getStatusText(room.status)}</span>
+                            ${room.guest ? `<br><small>Huésped: ${room.guest}</small>` : ''}
+                            ${room.checkIn && room.checkOut ? `<br><small>Estadía: ${room.checkIn} al ${room.checkOut}</small>` : ''}
+                        </div>
+                        <button class="reserve-btn" 
+                                ${room.status !== 'available' ? 'disabled' : ''}
+                                onclick="selectRoom('${room.number}')">
+                            ${room.status === 'available' ? 'Reservar' : 
+                              room.status === 'occupied' ? 'Ocupada' : 'En Mantenimiento'}
+                        </button>
+                    </div>
+                `;
+                roomsGrid.appendChild(roomCard);
+
+                // Agregar opción al select
+                const option = document.createElement('option');
+                option.value = room.number;
+                option.textContent = `Habitación ${room.number} - ${room.type}`;
+                roomSelect.appendChild(option);
+            });
+
+            updateStatusSummary();
+        }
+
+        // Función para actualizar resumen de estados
+        function updateStatusSummary() {
+            const available = rooms.filter(r => r.status === 'available').length;
+            const occupied = rooms.filter(r => r.status === 'occupied').length;
+            const maintenance = rooms.filter(r => r.status === 'maintenance').length;
+
+            document.getElementById('availableCount').textContent = available;
+            document.getElementById('occupiedCount').textContent = occupied;
+            document.getElementById('maintenanceCount').textContent = maintenance;
+
+            // Actualizar lista detallada
+            const statusList = document.getElementById('roomStatusList');
+            statusList.innerHTML = '<h4 style="margin-bottom: 1rem;">Estado Detallado:</h4>';
+            
+            rooms.forEach(room => {
+                const statusItem = document.createElement('div');
+                statusItem.style.cssText = 'padding: 0.5rem; margin-bottom: 0.5rem; background: white; border-radius: 5px; display: flex; justify-content: space-between; align-items: center;';
+                statusItem.innerHTML = `
+                    <span><strong>Hab. ${room.number}</strong> - ${room.type}</span>
+                    <span class="status-indicator status-${room.status}" style="margin-left: 10px;"></span>
+                `;
+                statusList.appendChild(statusItem);
+            });
+        }
+
+        // Función para seleccionar habitación
+        function selectRoom(roomNumber) {
+            document.getElementById('roomSelect').value = roomNumber;
+            document.getElementById('checkin').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Manejar formulario de check-in
+        document.getElementById('checkinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const roomNumber = document.getElementById('roomSelect').value;
+            const guestName = document.getElementById('guestName').value;
+            const guestRut = document.getElementById('guestRut').value;
+            const checkInDate = document.getElementById('checkInDate').value;
+            const checkOutDate = document.getElementById('checkOutDate').value;
+            const action = document.getElementById('action').value;
+
+            if (!roomNumber || !guestName || !guestRut || !checkInDate || !checkOutDate || !action) {
+                alert('Por favor complete todos los campos');
+                return;
+            }
+
+            const roomIndex = rooms.findIndex(r => r.number === roomNumber);
+            if (roomIndex === -1) {
+                alert('Habitación no encontrada');
+                return;
+            }
+
+            const room = rooms[roomIndex];
+
+            switch(action) {
+                case 'checkin':
+                    if (room.status !== 'available') {
+                        alert('La habitación no está disponible para check-in');
+                        return;
+                    }
+                    room.status = 'occupied';
+                    room.guest = guestName;
+                    room.checkIn = checkInDate;
+                    room.checkOut = checkOutDate;
+                    alert(`Check-in exitoso para ${guestName} en habitación ${roomNumber}`);
+                    break;
+
+                case 'checkout':
+                    if (room.status !== 'occupied') {
+                        alert('La habitación no está ocupada');
+                        return;
+                    }
+                    room.status = 'available';
+                    room.guest = null;
+                    room.checkIn = null;
+                    room.checkOut = null;
+                    alert(`Check-out exitoso para habitación ${roomNumber}`);
+                    break;
+
+                case 'maintenance':
+                    room.status = 'maintenance';
+                    room.guest = null;
+                    room.checkIn = null;
+                    room.checkOut = null;
+                    alert(`Habitación ${roomNumber} marcada en mantenimiento`);
+                    break;
+            }
+
+            // Limpiar formulario
+            document.getElementById('checkinForm').reset();
+            
+            // Re-renderizar habitaciones
+            renderRooms();
+        });
+
+        // Smooth scrolling para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 4px 25px rgba(0,0,0,0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Inicializar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            renderRooms();
+            
+            // Establecer fecha mínima como hoy
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('checkInDate').min = today;
+            document.getElementById('checkOutDate').min = today;
+            
+            // Actualizar fecha mínima de checkout cuando cambie checkin
+            document.getElementById('checkInDate').addEventListener('change', function() {
+                document.getElementById('checkOutDate').min = this.value;
+            });
+        });
+
+        // Validación de RUT chileno básica
+        document.getElementById('guestRut').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^0-9kK]/g, '');
+            if (value.length > 8) {
+                value = value.slice(0, -1) + '-' + value.slice(-1);
+            }
+            if (value.length > 4) {
+                value = value.slice(0, -4).replace(/\B(?=(\d{3})+(?!\d))/g, '.') + value.slice(-4);
+            }
+            e.target.value = value;
+        });
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animación
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.room-card, .about-text, .location-info');
+            elements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
