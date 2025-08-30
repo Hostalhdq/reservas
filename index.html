@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal HDQ Concepción - Alojamiento Cómodo cerca UBB | Residencial Collao</title>
+    <meta name="description" content="Hostal HDQ en Concepción, sector Collao. Alojamiento cómodo y moderno cerca de Universidad del Bío-Bío, Terminal Collao y Estadio Ester Roa. Ideal para empresas, familias y estudiantes.">
+    <meta name="keywords" content="hostal concepcion, hostales en concepcion, alojamiento concepcion, residencial concepcion, alojamiento collao, hostal collao, alojamiento cerca ubb, hostal cerca terminal collao">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Hostal HDQ Concepción - Alojamiento Cómodo cerca UBB">
+    <meta property="og:description" content="Hostal cómodo en sector Collao, cerca de Universidad del Bío-Bío, Terminal y Estadio Ester Roa.">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Hostal HDQ",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chiloé 1130",
+            "addressLocality": "Concepción",
+            "addressRegion": "Biobío",
+            "addressCountry": "CL"
+        },
+        "telephone": "+56987752280",
+        "email": "hostalhdq@gmail.com",
+        "description": "Hostal moderno en sector Collao, Concepción"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', 'EB Garamond', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Contact Banner Flotante */
+        .contact-banner {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+            color: white;
+            padding: 15px 0;
+            z-index: 999;
+            text-align: center;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .contact-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-btn.phone {
+            background: rgba(34, 139, 34, 0.8);
+        }
+
+        .contact-btn.whatsapp {
+            background: rgba(37, 211, 102, 0.8);
+        }
+
+        .contact-btn.phone:hover {
+            background: rgba(34, 139, 34, 1);
+        }
+
+        .contact-btn.whatsapp:hover {
+            background: rgba(37, 211, 102, 1);
+        }
+        header {
+            background: linear-gradient(135deg, #5dade2, #3498db);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f4f6f7;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect fill="%235dade2" width="1920" height="1080"/><rect fill="rgba(255,255,255,0.1)" x="0" y="0" width="1920" height="1080"/><text x="960" y="500" text-anchor="middle" font-size="48" fill="white" font-family="Garamond">Foto Principal del Hostal HDQ</text><text x="960" y="580" text-anchor="middle" font-size="24" fill="rgba(255,255,255,0.8)" font-family="Garamond">1920x1080px - Fachada o Área Común</text></svg>');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 140px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+
+        .cta-button {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #2980b9;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #5dade2;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-text h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .highlight-box {
+            background: #f4f6f7;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #5dade2;
+        }
+
+        /* Gallery Section */
+        .gallery-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #5dade2, #3498db);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #5dade2;
+            margin-bottom: 1rem;
+        }
+
+        /* Location Section */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .location-highlights {
+            background: #5dade2;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .location-highlights h3 {
+            margin-bottom: 1.5rem;
+            color: #f4f6f7;
+        }
+
+        .location-highlights ul {
+            list-style: none;
+        }
+
+        .location-highlights li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(244, 246, 247, 0.3);
+        }
+
+        .location-highlights li::before {
+            content: "📍 ";
+            margin-right: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-card {
+            background: #3498db;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #5dade2;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .contact-banner {
+                top: 70px;
+                padding: 10px 0;
+            }
+
+            .contact-buttons {
+                gap: 10px;
+            }
+
+            .contact-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                margin-top: 120px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contact Banner Flotante -->
+    <div class="contact-banner">
+        <div class="contact-buttons">
+            <span style="font-size: 1.1rem; margin-right: 10px;">📞 ¡Contacta Ahora!</span>
+            <a href="tel:+56987752280" class="contact-btn phone">
+                📞 Llamar Ahora
+            </a>
+            <a href="https://wa.me/56987752280?text=Buen%20día,%20estoy%20en%20su%20página%20y%20me%20interesa%20más%20información%20para%20poder%20Reservar." target="_blank" class="contact-btn whatsapp">
+                💬 WhatsApp
+            </a>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">Hostal HDQ</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="habitaciones.html">Habitaciones</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="blog.html">Guía de Concepción</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="reservas.html">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Hostal HDQ Concepción</h1>
+            <p>Tu mejor opción de alojamiento cómodo en sector Collao<br>
+            Cerca de UBB, Terminal Collao y Estadio Ester Roa</p>
+            <a href="reservas.html" class="cta-button">Reservar Ahora</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <h2>El Mejor Hostal en Concepción</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Alojamiento Cómodo y Moderno</h3>
+                <p>Hostal HDQ es tu mejor opción de <strong>alojamiento en Concepción</strong>. Ubicado estratégicamente en el sector Collao, ofrecemos habitaciones cómodas y modernas para empresas, familias, parejas y estudiantes.</p>
+                
+                <p>Nos especializamos en recibir empresas de telecomunicaciones, gráficas, constructoras, prestadores de servicios y técnicos. También somos el lugar perfecto para familias que visitan Concepción los fines de semana y delegaciones deportivas por nuestra cercanía al Estadio Ester Roa.</p>
+                
+                <p>Con más de 10 habitaciones disponibles, desde <strong>habitaciones dobles por $40.000</strong> hasta <strong>habitaciones grupales por $80.000</strong>, tenemos la opción perfecta para tu estadía.</p>
+            </div>
+            <div class="highlight-box">
+                <h3>¿Por qué elegir Hostal HDQ?</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✅ A solo 350m de la Universidad del Bío-Bío</li>
+                    <li>✅ Cerca del Terminal Collao</li>
+                    <li>✅ A 850m del Estadio Ester Roa</li>
+                    <li>✅ Habitaciones desde $40.000</li>
+                    <li>✅ WiFi gratuito</li>
+                    <li>✅ Estacionamiento disponible</li>
+                    <li>✅ Ideal para empresas y familias</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Galería Preview -->
+        <div class="gallery-preview">
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <div>
+                        <div style="font-size: 2rem;">🏨</div>
+                        <div>Área Común</div>
+                        <small>600x400px</small>
+                    </div>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Área de Descanso</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <div>
+                        <div style="font-size: 2rem;">🛏️</div>
+                        <div>Habitación</div>
+                        <small>600x400px</small>
+                    </div>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Habitaciones Modernas</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <div>
+                        <div style="font-size: 2rem;">🏢</div>
+                        <div>Fachada</div>
+                        <small>600x400px</small>
+                    </div>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Hostal HDQ</h4>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder">
+                    <div>
+                        <div style="font-size: 2rem;">🚗</div>
+                        <div>Estacionamiento</div>
+                        <small>600x400px</small>
+                    </div>
+                </div>
+                <div class="gallery-overlay">
+                    <h4>Estacionamiento</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🏨</div>
+                <h3>Habitaciones Modernas</h3>
+                <p>10 habitaciones completamente equipadas: dobles, matrimoniales, triples y grupales con todos los servicios.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏢</div>
+                <h3>Ideal para Empresas</h3>
+                <p>Especializados en recibir empresas de telecomunicaciones, construcción, servicios técnicos y delegaciones.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                <h3>Perfecto para Familias</h3>
+                <p>Ambiente acogedor para familias y parejas que visitan Concepción. Habitaciones amplias y seguras.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section" style="background-color: #f4f6f7;">
+        <h2>Ubicación Estratégica en Concepción</h2>
+        <div class="location-grid">
+            <div>
+                <h3>Tu Residencial en el Corazón de Collao</h3>
+                <p>Hostal HDQ está ubicado en <strong>Chiloé 1130, sector Collao</strong>, una de las zonas más convenientes de Concepción. Nuestra ubicación estratégica te permite acceder fácilmente a universidades, centros comerciales, restaurantes y principales atractivos de la ciudad.</p>
+                
+                <p>Estamos a solo minutos de la <strong>Universidad del Bío-Bío (350m)</strong>, del <strong>Terminal Collao</strong> y del <strong>Estadio Ester Roa (850m)</strong>, lo que nos convierte en la mejor opción para estudiantes, empresas y deportistas.</p>
+            </div>
+            <div class="location-highlights">
+                <h3>Cerca de Todo lo Importante</h3>
+                <ul>
+                    <li>Universidad del Bío-Bío - 350 metros</li>
+                    <li>Terminal Collao - Muy cerca</li>
+                    <li>Estadio Ester Roa - 850 metros</li>
+                    <li>Gimnasio Municipal - 850 metros</li>
+                    <li>Museo de Historia Natural - Cercano</li>
+                    <li>Plaza de los Dinosaurios - Cercano</li>
+                    <li>Zoológico Nonguén - Zona cercana</li>
+                    <li>Reserva Nacional Nonguén - Zona cercana</li>
+                    <li>Supermercados y Farmacias - 300 metros</li>
+                    <li>Restaurantes y Panaderías - 300 metros</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <h2>Reserva tu Estadía</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>📞 Teléfono</h3>
+                <p><strong>+56 9 8775 2280</strong></p>
+                <p>Llamanos o envía WhatsApp</p>
+            </div>
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p><strong>hostalhdq@gmail.com</strong></p>
+                <p>Consultas y reservas</p>
+            </div>
+            <div class="contact-card">
+                <h3>📍 Dirección</h3>
+                <p><strong>Chiloé 1130<br>Sector Collao, Concepción</strong></p>
+                <p>Fácil acceso en auto</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="reservas.html" class="cta-button" style="font-size: 1.2rem; padding: 20px 40px;">Hacer Reserva Online</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <p>&copy; 2025 Hostal HDQ - El mejor alojamiento cómodo en Concepción | Sector Collao</p>
+            <p>Hostal en Concepción • Residencial Collao • Alojamiento cerca UBB • Terminal Collao</p>
+        </div>
+    </footer>
+</body>
+</html>
