@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal HDQ - Alojamiento en Concepción Cerca UBB y Terminal Collao | Especialistas Delegaciones</title>
+    <meta name="description" content="Conoce Hostal HDQ en Concepción. Especialistas en delegaciones deportivas, trabajadores y estudiantes. Atención personalizada cerca de UBB, Terminal Collao y Estadio Municipal. Tu base de operaciones en Concepción.">
+    <meta name="keywords" content="hostal HDQ, Concepción, delegaciones deportivas, UBB, Terminal Collao, alojamiento Concepción, trabajadores, estudiantes postgrado, forestales, constructoras">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hostalhdq.cl/nosotros">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nosotros - Hostal HDQ Concepción | Te ayudamos a que vivas una gran experiencia">
+    <meta property="og:description" content="Conocemos a nuestros huéspedes. Hostal HDQ, tu base de operaciones en Concepción cerca de UBB, Terminal Collao y Estadio Municipal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hostalhdq.cl/nosotros">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5aa0, #1e3d6b);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .location {
+            font-size: 1.1em;
+            opacity: 0.8;
+        }
+        
+        .main-content {
+            padding: 80px 0;
+        }
+        
+        .intro-section {
+            background: white;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        
+        .intro-section h2 {
+            color: #2c5aa0;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .intro-text {
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            color: #2c5aa0;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        .location-section {
+            background: white;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        
+        .location-section h2 {
+            color: #2c5aa0;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .location-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .location-item strong {
+            color: #2c5aa0;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .location-section a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        .location-section a:hover {
+            color: #1a4480;
+            text-decoration: underline;
+        }
+        
+        .services-section {
+            background: white;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 50px;
+        }
+        
+        .services-section h2 {
+            color: #2c5aa0;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .service-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2c5aa0, #1e3d6b);
+            color: white;
+            padding: 60px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 10px;
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2em;
+            }
+            
+            .intro-section, .location-section, .services-section {
+                padding: 40px 30px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hostal HDQ</h1>
+               <p class="tagline">Conoce Nuestra Historia - Más de 15 Años Recibiendo Huéspedes en Concepción</p>
+                <p class="location">Chiloé 1130, Sector Collao, Concepción</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="intro-section">
+                <h2>Conocemos a Nuestros Huéspedes</h2>
+                <p class="intro-text">
+                    En Hostal HDQ encontrarás un ambiente privado, tranquilo, seguro y confortable. Nuestro objetivo es proporcionar una estadía confortable y productiva, logrando una experiencia inolvidable a aquellos visitantes que llegan a nuestra querida ciudad de Concepción por motivos de trabajo, delegaciones deportivas, estudios o conexiones de viaje.
+                </p>
+                <p class="intro-text">
+                    Nos especializamos en brindar atención personalizada donde cada huésped es importante. Nos hacemos amigos de nuestros visitantes frecuentes, conocemos sus gustos, sus habitaciones preferidas y creamos relaciones duraderas que van más allá del simple alojamiento.
+                </p>
+            </section>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🏠</span>
+                    <h3>Hospitalidad con Memoria</h3>
+                    <p>Recordamos tus preferencias, tu habitación favorita y tus necesidades específicas. Cada visita es como volver a casa.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🏃‍♂️</span>
+                    <h3>Especialistas en Delegaciones</h3>
+                    <p>Ubicación ideal para delegaciones deportivas, a solo 850 metros del Estadio y Gimnasio Municipal.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🎓</span>
+                    <h3>Cerca de Universidades</h3>
+                    <p>A 350 metros de la Universidad del Bío Bío (UBB), perfecto para estudiantes de postgrado y profesores.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🚌</span>
+                    <h3>Conexión de Buses</h3>
+                    <p>A 850 metros del Terminal Collao, ideal para conexiones o si perdiste tu bus.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">🌿</span>
+                    <h3>Terraza Tranquila</h3>
+                    <p>Espacio de relajación al aire libre donde puedes disfrutar de un ambiente tranquilo y sereno.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <span class="feature-icon">👥</span>
+                    <h3>Atención Personalizada</h3>
+                    <p>Cada huésped recibe un trato personalizado y cercano, creando vínculos que perduran en el tiempo.</p>
+                </div>
+            </div>
+
+            <section class="location-section">
+                <h2>Ubicación Estratégica en Concepción</h2>
+                <p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;">
+                    Hostal HDQ se localiza en el sector Collao de Concepción, una ubicación privilegiada que te conecta fácilmente con los principales puntos de interés de la ciudad.
+                </p>
+                
+                <div class="location-grid">
+                    <div class="location-item">
+                        <strong><a href="https://www.ubb.cl" target="_blank">Universidad del Bío Bío (UBB)</a></strong>
+                        350 metros - 4 minutos caminando
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://colegioscreacion.cl/" target="_blank">Colegio Creación</a></strong>
+                        300 metros - 3 minutos caminando
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.reservamilitar.cl/project/r-n-6-chacabuco/" target="_blank">Regimiento N°6 "Chacabuco"</a></strong>
+                        1.4 km - 4 minutos en auto
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.hospitalclinicodelsur.cl/" target="_blank">Hospital Clínico del Sur</a></strong>
+                        1.6 km - 5 minutos en auto
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.mhnconcepcion.gob.cl/" target="_blank">Plaza Acevedo (Plaza de Dinosaurios)</a></strong>
+                        1.7 km - 5 minutos en auto
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.zooconcepcion.cl/" target="_blank">Zoológico de Concepción</a></strong>
+                        3.9 km - 9 minutos en locomoción
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://buses.horariodebuses.cl/terminal-de-concepcion" target="_blank">Terminal de Buses Collao</a></strong>
+                        850 metros - 10 minutos caminando
+                    </div>
+                    <div class="location-item">
+                        <strong>Estadio y Gimnasio Municipal</strong>
+                        850 metros - 10 minutos caminando
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.instagram.com/galeriahistoriaconcepcion" target="_blank">Centro de Concepción</a></strong>
+                        6 kilómetros - 15 minutos en transporte
+                    </div>
+                    <div class="location-item">
+                        <strong><a href="https://www.conaf.cl/parque_nacionales/parque-nacional-nonguen/" target="_blank">Parque Nacional Nonguén</a></strong>
+                        8.9 km - 20 minutos en auto
+                    </div>
+                    <div class="location-item">
+                        <strong>Universidad de Concepción</strong>
+                        15-20 minutos en transporte público
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <strong>10 Habitaciones Cómodas</strong><br>
+                        Baño privado en todas las habitaciones
+                    </div>
+                    <div class="service-item">
+                        <strong>Internet WiFi</strong><br>
+                        Conexión de alta velocidad gratuita
+                    </div>
+                    <div class="service-item">
+                        <strong>Televisión</strong><br>
+                        TV en todas las habitaciones
+                    </div>
+                    <div class="service-item">
+                        <strong>Estacionamiento</strong><br>
+                        Parking disponible para huéspedes
+                    </div>
+                    <div class="service-item">
+                        <strong>Calefacción</strong><br>
+                        Sistema de calefacción en todas las habitaciones
+                    </div>
+                    <div class="service-item">
+                        <strong>Desayuno Opcional</strong><br>
+                        $4.000 por persona
+                    </div>
+                    <div class="service-item">
+                        <strong>Servicio de Lavandería</strong><br>
+                        $10.000 por carga (lavado y secado)
+                    </div>
+                    <div class="service-item">
+                        <strong>Terraza</strong><br>
+                        Espacio tranquilo para relajación
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Te Esperamos Como Amigos</h2>
+                <p style="font-size: 1.2em; margin-bottom: 30px;">
+                    Tanto si vienes por trabajo, delegaciones deportivas, estudios o simplemente de paso, en Hostal HDQ encontrarás tu segunda casa en Concepción donde ser recordado y valorado.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Dirección</h3>
+                        <p>Chiloé 1130, Sector Collao<br>Concepción, Región del Bío Bío</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Teléfono</h3>
+                        <p>+56 9 8775 2280</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>hostalhdq@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>👥 Especialidades</h3>
+                        <p>Delegaciones deportivas, trabajadores, estudiantes, profesores, turistas de empresas</p>
+                    </div>
+                </div>
+                
+                <!-- Sección adicional SEO -->
+                <div style="background: #E6F3FF; margin-top: 50px; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <h2 style="color: #2c5aa0; text-align: center; margin-bottom: 30px;">¿Por Qué Elegir Nuestro Hostal en Concepción?</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Mejor Ubicación en Concepción</h3>
+                            <p style="color: #333;">Nuestro hostal está estratégicamente ubicado en sector Collao, cerca de UBB, Terminal de Buses, Zoo y principales atracciones de Concepción.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Alojamiento Económico y Cómodo</h3>
+                            <p style="color: #333;">Ofrecemos el mejor precio-calidad en alojamiento en Concepción, con habitaciones cómodas y servicios completos.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Especialistas en Delegaciones</h3>
+                            <p style="color: #333;">Somos el hostal preferido en Concepción para delegaciones deportivas, trabajadores y grupos empresariales.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Atención Personalizada</h3>
+                            <p style="color: #333;">En nuestro hostal familiar en Concepción, cada huésped es importante y recordamos sus preferencias.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="background: #E6F3FF; margin-top: 30px; padding: 30px; border-radius: 15px; border-left: 4px solid #2c5aa0;">
+                    <h3 style="color: #2c5aa0; margin-bottom: 15px;">🏆 Hostal HDQ - Tu Primera Opción de Alojamiento en Concepción</h3>
+                    <p style="margin-bottom: 15px; color: #333;"><strong>¿Buscas hostal en Concepción?</strong> Hostal HDQ es tu mejor opción para alojamiento cómodo, económico y bien ubicado en Concepción. Nos especializamos en brindar la mejor experiencia de hospedaje en la ciudad.</p>
+                    <p style="margin-bottom: 15px; color: #333;"><strong>Alojamiento ideal para:</strong> Estudiantes UBB, delegaciones deportivas, trabajadores de empresas forestales y constructoras, familias visitando el zoo y atracciones turísticas, profesionales en viaje de negocios.</p>
+                    <p style="color: #333;"><strong>Reserva ya</strong> en el hostal más acogedor de Concepción. ¡Te esperamos como amigos en tu segunda casa!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
