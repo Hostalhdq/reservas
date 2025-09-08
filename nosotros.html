@@ -223,18 +223,181 @@
             font-size: 1.2em;
         }
         
+        /* Estilos mejorados para la sección "Por qué elegir" */
+        .why-choose-section {
+            background: #E6F3FF;
+            margin-top: 50px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .why-choose-section h2 {
+            color: #2c5aa0;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+        
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .why-choose-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .why-choose-item h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .why-choose-item p {
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .final-cta {
+            background: #E6F3FF;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .final-cta h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .final-cta p {
+            margin-bottom: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 2.2em;
             }
             
-            .intro-section, .location-section, .services-section {
-                padding: 40px 30px;
+            .tagline {
+                font-size: 1.1em;
+            }
+            
+            .intro-section, .location-section, .services-section, .cta-section {
+                padding: 30px 20px;
             }
             
             .features-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
+                margin: 40px 0;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .services-list {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            /* Mejoras específicas para móvil de la sección "Por qué elegir" */
+            .why-choose-section {
+                padding: 30px 20px;
+                margin-top: 30px;
+            }
+            
+            .why-choose-section h2 {
+                font-size: 1.6em;
+                margin-bottom: 25px;
+            }
+            
+            .why-choose-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .why-choose-item {
+                padding: 20px;
+            }
+            
+            .why-choose-item h3 {
+                font-size: 1em;
+                margin-bottom: 12px;
+            }
+            
+            .why-choose-item p {
+                font-size: 0.9em;
+            }
+            
+            .final-cta {
+                padding: 25px 20px;
+                margin-top: 20px;
+            }
+            
+            .final-cta h3 {
+                font-size: 1.1em;
+                margin-bottom: 12px;
+            }
+            
+            .final-cta p {
+                font-size: 0.9em;
+                margin-bottom: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero-content h1 {
+                font-size: 1.8em;
+            }
+            
+            .tagline {
+                font-size: 1em;
+            }
+            
+            .intro-section, .location-section, .services-section, .cta-section {
+                padding: 25px 15px;
+            }
+            
+            .feature-card {
+                padding: 25px;
+            }
+            
+            .why-choose-section {
+                padding: 25px 15px;
+            }
+            
+            .why-choose-section h2 {
+                font-size: 1.4em;
+            }
+            
+            .why-choose-item {
+                padding: 15px;
+            }
+            
+            .final-cta {
+                padding: 20px 15px;
             }
         }
     </style>
@@ -308,7 +471,7 @@
                 
                 <div class="location-grid">
                     <div class="location-item">
-                        <strong><a href="https://www.ubb.cl" target="_blank">Universidad del Bío Bío (UBB)</a></strong>
+                        <strong><a href="https://www.ubiobio.cl" target="_blank">Universidad del Bío Bío (UBB)</a></strong>
                         350 metros - 4 minutos caminando
                     </div>
                     <div class="location-item">
@@ -320,7 +483,7 @@
                         1.4 km - 4 minutos en auto
                     </div>
                     <div class="location-item">
-                        <strong><a href="https://www.hospitalclinicodelsur.cl/" target="_blank">Hospital Clínico del Sur</a></strong>
+                        <strong><a href="https://www.clinicasur.cl/" target="_blank">Hospital Clínico del Sur</a></strong>
                         1.6 km - 5 minutos en auto
                     </div>
                     <div class="location-item">
@@ -336,7 +499,7 @@
                         850 metros - 10 minutos caminando
                     </div>
                     <div class="location-item">
-                        <strong>Estadio y Gimnasio Municipal</strong>
+                        <strong><a href="https://www.facebook.com/EstadioEsterRoa" target="_blank">Estadio Ester Roa y Gimnasio Municipal</a></strong>
                         850 metros - 10 minutos caminando
                     </div>
                     <div class="location-item">
@@ -348,7 +511,7 @@
                         8.9 km - 20 minutos en auto
                     </div>
                     <div class="location-item">
-                        <strong>Universidad de Concepción</strong>
+                        <strong><a href="https://www.udec.cl" target="_blank">Universidad de Concepción</a></strong>
                         15-20 minutos en transporte público
                     </div>
                 </div>
@@ -417,34 +580,34 @@
                     </div>
                 </div>
                 
-                <!-- Sección adicional SEO -->
-                <div style="background: #E6F3FF; margin-top: 50px; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    <h2 style="color: #2c5aa0; text-align: center; margin-bottom: 30px;">¿Por Qué Elegir Nuestro Hostal en Concepción?</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                        <div>
-                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Mejor Ubicación en Concepción</h3>
-                            <p style="color: #333;">Nuestro hostal está estratégicamente ubicado en sector Collao, cerca de UBB, Terminal de Buses, Zoo y principales atracciones de Concepción.</p>
+                <!-- Sección mejorada para móvil -->
+                <div class="why-choose-section">
+                    <h2>¿Por Qué Elegir Nuestro Hostal en Concepción?</h2>
+                    <div class="why-choose-grid">
+                        <div class="why-choose-item">
+                            <h3>✅ Mejor Ubicación en Concepción</h3>
+                            <p>Nuestro hostal está estratégicamente ubicado en sector Collao, cerca de UBB, Terminal de Buses, Zoo y principales atracciones de Concepción.</p>
                         </div>
-                        <div>
-                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Alojamiento Económico y Cómodo</h3>
-                            <p style="color: #333;">Ofrecemos el mejor precio-calidad en alojamiento en Concepción, con habitaciones cómodas y servicios completos.</p>
+                        <div class="why-choose-item">
+                            <h3>✅ Alojamiento Económico y Cómodo</h3>
+                            <p>Ofrecemos el mejor precio-calidad en alojamiento en Concepción, con habitaciones cómodas y servicios completos.</p>
                         </div>
-                        <div>
-                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Especialistas en Delegaciones</h3>
-                            <p style="color: #333;">Somos el hostal preferido en Concepción para delegaciones deportivas, trabajadores y grupos empresariales.</p>
+                        <div class="why-choose-item">
+                            <h3>✅ Especialistas en Delegaciones</h3>
+                            <p>Somos el hostal preferido en Concepción para delegaciones deportivas, trabajadores y grupos empresariales.</p>
                         </div>
-                        <div>
-                            <h3 style="color: #2c5aa0; margin-bottom: 15px;">✅ Atención Personalizada</h3>
-                            <p style="color: #333;">En nuestro hostal familiar en Concepción, cada huésped es importante y recordamos sus preferencias.</p>
+                        <div class="why-choose-item">
+                            <h3>✅ Atención Personalizada</h3>
+                            <p>En nuestro hostal familiar en Concepción, cada huésped es importante y recordamos sus preferencias.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div style="background: #E6F3FF; margin-top: 30px; padding: 30px; border-radius: 15px; border-left: 4px solid #2c5aa0;">
-                    <h3 style="color: #2c5aa0; margin-bottom: 15px;">🏆 Hostal HDQ - Tu Primera Opción de Alojamiento en Concepción</h3>
-                    <p style="margin-bottom: 15px; color: #333;"><strong>¿Buscas hostal en Concepción?</strong> Hostal HDQ es tu mejor opción para alojamiento cómodo, económico y bien ubicado en Concepción. Nos especializamos en brindar la mejor experiencia de hospedaje en la ciudad.</p>
-                    <p style="margin-bottom: 15px; color: #333;"><strong>Alojamiento ideal para:</strong> Estudiantes UBB, delegaciones deportivas, trabajadores de empresas forestales y constructoras, familias visitando el zoo y atracciones turísticas, profesionales en viaje de negocios.</p>
-                    <p style="color: #333;"><strong>Reserva ya</strong> en el hostal más acogedor de Concepción. ¡Te esperamos como amigos en tu segunda casa!</p>
+                <div class="final-cta">
+                    <h3>🏆 Hostal HDQ - Tu Primera Opción de Alojamiento en Concepción</h3>
+                    <p><strong>¿Buscas hostal en Concepción?</strong> Hostal HDQ es tu mejor opción para alojamiento cómodo, económico y bien ubicado en Concepción. Nos especializamos en brindar la mejor experiencia de hospedaje en la ciudad.</p>
+                    <p><strong>Alojamiento ideal para:</strong> Estudiantes UBB, delegaciones deportivas, trabajadores de empresas forestales y constructoras, familias visitando el zoo y atracciones turísticas, profesionales en viaje de negocios.</p>
+                    <p><strong>Reserva ya</strong> en el hostal más acogedor de Concepción. ¡Te esperamos como amigos en tu segunda casa!</p>
                 </div>
             </section>
         </div>
