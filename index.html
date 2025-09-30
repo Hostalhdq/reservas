@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- SEO Meta Tags Optimizadas -->
     <title>Hostal HDQ ⭐ Desde $40.000 | Terminal Collao Concepción | Certificado SERNATUR</title>
     <meta name="description" content="✅ Chiloé 1130, Sector Collao ✅ Todas con baño privado ✅ Desde $40.000 ✅ WiFi + Estacionamiento gratis ✅ Sello REC y Rally 2025 ✅ 15 años de experiencia. Reserva: +56 9 8775 2280">
     <meta name="keywords" content="hostal concepción, hostal en concepción, alojamiento terminal collao, habitaciones baño privado concepción, hostal económico concepción, hostal certificado sernatur, hostal chiloé 1130">
@@ -13,7 +12,6 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://hostalhdq.cl/">
     
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hostalhdq.cl/">
     <meta property="og:title" content="Hostal HDQ - Registro SERNATUR Vigente | Sector Collao Concepción">
@@ -21,20 +19,16 @@
     <meta property="og:image" content="https://hostalhdq.cl/images/hostal-hdq-fachada.jpg">
     <meta property="og:locale" content="es_CL">
     
-    <!-- Geo Tags -->
     <meta name="geo.region" content="CL-BI">
     <meta name="geo.placename" content="Concepción">
     <meta name="geo.position" content="-36.8201;-73.0444">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -79,7 +73,6 @@
     }
     </script>
 
-    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -119,6 +112,10 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        html {
+            overflow-x: hidden;
+        }
         
         :root {
             --primary: #667eea;
@@ -142,6 +139,8 @@
             color: var(--dark);
             background: var(--white);
             overflow-x: hidden;
+            width: 100%;
+            position: relative;
         }
         
         ::-webkit-scrollbar {
@@ -157,7 +156,6 @@
             border-radius: 10px;
         }
 
-        /* Banner de Urgencia */
         .urgencia-banner {
             background: linear-gradient(90deg, #ff4757 0%, #ff6348 100%);
             color: white;
@@ -190,7 +188,6 @@
             to { left: 100%; }
         }
         
-        /* Header */
         header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -249,7 +246,6 @@
             width: 100%;
         }
         
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -379,7 +375,6 @@
             }
         }
         
-        /* Trust Badges */
         .trust-section {
             background: var(--light-gray);
             padding: 2rem 20px;
@@ -426,7 +421,6 @@
             font-size: 0.85rem;
         }
 
-        /* Certificación SERNATUR */
         .certificacion-section {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
@@ -482,7 +476,6 @@
             font-size: 0.9rem;
         }
         
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -525,7 +518,6 @@
             margin-top: 1.5rem;
         }
         
-        /* Habitaciones Grid */
         .habitaciones-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -640,7 +632,6 @@
             box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
         }
         
-        /* Servicios Grid */
         .servicios-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -683,7 +674,6 @@
             line-height: 1.6;
         }
 
-        /* Formulario de Reserva */
         .reserva-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             padding: 5rem 20px;
@@ -813,7 +803,6 @@
             font-weight: 600;
         }
 
-        /* Info Box */
         .info-box {
             background: #e0f2fe;
             border-left: 4px solid #0ea5e9;
@@ -826,7 +815,6 @@
             color: #0369a1;
         }
 
-        /* FAQ Section */
         .faq-section {
             background: var(--light-gray);
         }
@@ -915,7 +903,6 @@
             background: var(--light-gray);
         }
 
-        /* Ubicación */
         .ubicacion-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -960,9 +947,16 @@
             color: white;
             font-size: 1.2rem;
             box-shadow: var(--shadow);
+            overflow: hidden;
         }
 
-        /* Testimonios */
+        .mapa iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 20px;
+        }
+
         .testimonios-section {
             background: var(--light-gray);
         }
@@ -1019,7 +1013,6 @@
             font-weight: 600;
         }
 
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -1065,7 +1058,6 @@
             color: rgba(255,255,255,0.6);
         }
 
-        /* WhatsApp Flotante */
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -1122,7 +1114,6 @@
             }
         }
 
-        /* Botones Móviles */
         .mobile-cta {
             display: none;
             position: fixed;
@@ -1130,7 +1121,7 @@
             left: 0;
             right: 0;
             background: white;
-            padding: 15px;
+            padding: 12px 15px;
             box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
             z-index: 998;
             gap: 10px;
@@ -1138,12 +1129,13 @@
 
         .mobile-cta a {
             flex: 1;
-            padding: 15px;
+            padding: 14px;
             text-align: center;
             text-decoration: none;
             font-weight: 600;
             border-radius: 50px;
             transition: all 0.3s;
+            font-size: 0.95rem;
         }
 
         .btn-llamar-mobile {
@@ -1156,7 +1148,7 @@
             color: white;
         }
 
-        /* Responsive */
+        /* MEDIA QUERIES PARA RESPONSIVIDAD MÓVIL */
         @media (max-width: 968px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -1182,11 +1174,28 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .trust-badges {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
+            body {
+                padding-bottom: 80px;
+            }
+
+            .urgencia-banner {
+                font-size: 0.85rem;
+                padding: 10px 15px;
+            }
+
+            .logo {
+                font-size: 1.4rem;
+            }
+
             .hero {
-                padding: 4rem 20px 3rem;
+                padding: 4rem 15px 3rem;
             }
 
             .hero h1 {
@@ -1194,16 +1203,52 @@
             }
 
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            }
+
+            .sello-badge {
+                font-size: 0.8rem;
+                padding: 6px 15px;
             }
 
             .hero-features {
                 flex-direction: column;
                 gap: 0.8rem;
+                align-items: stretch;
+            }
+
+            .hero-feature {
+                justify-content: center;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.95rem;
             }
 
             section {
-                padding: 3rem 20px;
+                padding: 3rem 15px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .certificacion-content h2 {
+                font-size: 2rem;
+            }
+
+            .sello {
+                min-width: 150px;
+                padding: 1.5rem;
+            }
+
+            .sello-icon {
+                font-size: 3rem;
             }
 
             .mobile-cta {
@@ -1211,7 +1256,15 @@
             }
 
             .whatsapp-float {
-                bottom: 90px;
+                bottom: 95px;
+                width: 55px;
+                height: 55px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
             }
 
             .habitaciones-grid,
@@ -1220,20 +1273,135 @@
                 grid-template-columns: 1fr;
             }
 
+            .trust-badges {
+                grid-template-columns: 1fr;
+            }
+
+            .badge {
+                padding: 1.2rem;
+            }
+
+            .form-reserva {
+                padding: 1.5rem;
+            }
+
             .form-row {
                 grid-template-columns: 1fr;
+            }
+
+            .form-header h2 {
+                font-size: 2rem;
+            }
+
+            .form-header p {
+                font-size: 1rem;
+            }
+
+            .mapa {
+                height: 350px;
+            }
+
+            .ubicacion-info li {
+                font-size: 0.95rem;
+            }
+
+            .faq-pregunta {
+                font-size: 1rem;
+                padding: 1.2rem 1.5rem;
+            }
+
+            .faq-pregunta:hover {
+                padding-left: 1.5rem;
+            }
+
+            .faq-icon {
+                font-size: 1.5rem;
+            }
+
+            .faq-respuesta {
+                padding: 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            .tabla-precios {
+                font-size: 0.9rem;
+            }
+
+            .tabla-precios th,
+            .tabla-precios td {
+                padding: 0.8rem;
+            }
+
+            .servicio-card {
+                padding: 1.5rem;
+            }
+
+            .servicio-icon {
+                font-size: 3rem;
+            }
+
+            .testimonio {
+                padding: 1.5rem;
+            }
+
+            .footer-content {
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .certificacion-content h2 {
+                font-size: 1.7rem;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .mobile-cta a {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+
+            .habitacion-img {
+                height: 180px;
+                font-size: 3rem;
+            }
+
+            .precio-badge {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
+
+            .habitacion-info {
+                padding: 1.5rem;
+            }
+
+            .habitacion-info h3 {
+                font-size: 1.3rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Banner de Urgencia -->
     <div class="urgencia-banner">
         ⚡ ¡Consulta habitaciones disponibles! Reserva ahora y asegura tu espacio ⚡
     </div>
 
-    <!-- Header -->
     <header>
         <nav>
             <div class="logo">Hostal HDQ</div>
@@ -1247,7 +1415,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <div class="sello-badge">
@@ -1270,7 +1437,6 @@
         </div>
     </section>
 
-    <!-- Trust Badges -->
     <div class="trust-section">
         <div class="trust-badges">
             <div class="badge">
@@ -1304,7 +1470,6 @@
         </div>
     </div>
 
-    <!-- Certificación SERNATUR -->
     <section class="certificacion-section">
         <div class="certificacion-content">
             <h2>Hostal registrado en SERNATUR</h2>
@@ -1325,7 +1490,6 @@
         </div>
     </section>
 
-    <!-- Habitaciones -->
     <section id="habitaciones">
         <div class="container">
             <div class="section-header">
@@ -1401,7 +1565,6 @@
         </div>
     </section>
 
-    <!-- Servicios -->
     <section id="servicios" style="background: var(--light-gray);">
         <div class="container">
             <div class="section-header">
@@ -1467,7 +1630,7 @@
                 <div class="servicio-card">
                     <span class="servicio-icon">🍳</span>
                     <h3>Desayuno Opcional</h3>
-                    <p>$4.000 por persona (bajo pedidohasta 17:00 horas)</p>
+                    <p>$4.000 por persona (bajo pedido hasta 17:00 horas)</p>
                 </div>
 
                 <div class="servicio-card">
@@ -1485,7 +1648,6 @@
         </div>
     </section>
 
-    <!-- Testimonios -->
     <section class="testimonios-section">
         <div class="container">
             <div class="section-header">
@@ -1515,7 +1677,6 @@
         </div>
     </section>
 
-    <!-- Formulario de Reserva -->
     <section id="contacto" class="reserva-section">
         <div class="form-container">
             <div class="form-header">
@@ -1529,15 +1690,6 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_template" value="table">
                     <input type="text" name="_honey" style="display:none">
-
-<form action="https://formsubmit.co/your@email.com" method="POST">
-     <input type="text" name="name" required>
-     <input type="email" name="email" required>
-     <button type="submit">Send</button>
-</form>
-
-
-
                     
                     <div class="form-row">
                         <div class="form-group">
@@ -1609,7 +1761,6 @@
         </div>
     </section>
 
-    <!-- Ubicación -->
     <section id="ubicacion">
         <div class="container">
             <div class="section-header">
@@ -1631,17 +1782,12 @@
                 </div>
 
                 <div class="mapa">
-                    <div style="text-align: center;">
-                        <p style="font-size: 2rem; margin-bottom: 1rem;">Chiloé 1130 </p>
-                        <p><strong></strong><br>Sector Collao, Concepción</p>
-                        <small style="display: block; margin-top: 1rem;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.005818024124!2d-73.016258!3d-36.818380499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b417dd26739d%3A0xc0a78b0e3597146a!2sHostal%20HDQ%20Concepci%C3%B3n!5e0!3m2!1ses!2scl!4v1756734191911!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></small>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.005818024124!2d-73.016258!3d-36.818380499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b417dd26739d%3A0xc0a78b0e3597146a!2sHostal%20HDQ%20Concepci%C3%B3n!5e0!3m2!1ses!2scl!4v1756734191911!5m2!1ses!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq-section">
         <div class="container">
             <div class="section-header">
@@ -1786,14 +1932,13 @@
                             <li>🏅 <strong>Sello REC</strong> (Rock en Conce)</li>
                             <li>🏆 <strong>Sello Rally</strong> (Rally internacional WRC)</li>
                         </ul>
-                        <p>Estas sollos garantizan que cumplimos con todos los estándares de calidad y seguridad establecidos por el Servicio Nacional de Turismo de Chile.</p>
+                        <p>Estos sellos garantizan que cumplimos con todos los estándares de calidad y seguridad establecidos por el Servicio Nacional de Turismo de Chile.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -1838,7 +1983,6 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Flotante -->
     <a href="https://wa.me/56987752280?text=Hola,%20quisiera%20consultar%20disponibilidad%20en%20Hostal%20HDQ" 
        class="whatsapp-float" 
        target="_blank"
@@ -1849,15 +1993,12 @@
         </svg>
     </a>
 
-    <!-- Botones Móviles -->
     <div class="mobile-cta">
         <a href="tel:+56987752280" class="btn-llamar-mobile">📞 Llamar</a>
         <a href="https://wa.me/56987752280" class="btn-whatsapp-mobile">💬 WhatsApp</a>
     </div>
 
-    <!-- Scripts -->
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1868,18 +2009,15 @@
             });
         });
 
-        // Función para scroll a reserva
         function scrollToReserva() {
             document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Configurar fecha mínima en el formulario (hoy)
         const today = new Date().toISOString().split('T')[0];
         document.querySelectorAll('input[type="date"]').forEach(input => {
             input.setAttribute('min', today);
         });
 
-        // Ocultar banner de urgencia después de 30 segundos
         setTimeout(() => {
             const banner = document.querySelector('.urgencia-banner');
             if (banner) {
@@ -1889,7 +2027,6 @@
             }
         }, 30000);
 
-        // Animar elementos al hacer scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -1904,7 +2041,6 @@
             });
         }, observerOptions);
 
-        // Observar elementos que queremos animar
         document.querySelectorAll('.habitacion-card, .servicio-card, .testimonio, .faq-item, .badge, .sello').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
