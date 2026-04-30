@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Página Principal -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Página principal -->
   <url>
     <loc>https://hostalhdq.cl/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2025-09-14</lastmod>
+    <image:image>
+      <image:loc>https://hostalhdq.cl/FACHADA_HOSTAL_HDQ.PNG</image:loc>
+      <image:title>Fachada Hostal HDQ Concepción — Chiloé 1130 Sector Collao</image:title>
+      <image:caption>Hostal HDQ en Concepción, Chile. Alojamiento económico con baño privado, WiFi y estacionamiento gratuito.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hostalhdq.cl/HAB_MATRIMONIAL.jpg</image:loc>
+      <image:title>Habitación Matrimonial — Hostal HDQ Concepción</image:title>
+      <image:caption>Habitación doble matrimonial con baño privado, WiFi, TV cable y frigobar desde $40.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hostalhdq.cl/HAB_DOBLE.jpg</image:loc>
+      <image:title>Habitación Doble 2 Camas — Hostal HDQ Concepción</image:title>
+      <image:caption>Habitación doble con 2 camas individuales, baño privado y WiFi desde $50.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hostalhdq.cl/HAB_TRIPLE.jpg</image:loc>
+      <image:title>Habitación Triple — Hostal HDQ Concepción</image:title>
+      <image:caption>Habitación triple para 3 personas con baño privado y WiFi desde $60.000</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://hostalhdq.cl/HAB_CUADRUPLE.jpg</image:loc>
+      <image:title>Habitación Cuádruple — Hostal HDQ Concepción</image:title>
+      <image:caption>Habitación cuádruple ideal para delegaciones y grupos con baño privado desde $80.000</image:caption>
+    </image:image>
   </url>
-  
+
 </urlset>

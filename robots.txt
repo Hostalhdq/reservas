@@ -1,0 +1,18 @@
+# robots.txt — Hostal HDQ Concepción
+# https://hostalhdq.cl
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a recursos importantes
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+
+# Bloquear archivos innecesarios
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://hostalhdq.cl/sitemap.xml

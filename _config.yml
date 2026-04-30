@@ -1,0 +1,29 @@
+# _config.yml — Hostal HDQ GitHub Pages
+# https://hostalhdq.cl
+
+title: "Hostal HDQ Concepción"
+description: "Hostal económico en Concepción, Sector Collao. Alojamiento corporativo con convenios para empresas. Baño privado, WiFi y estacionamiento gratuito. Registro SERNATUR."
+url: "https://hostalhdq.cl"
+baseurl: ""
+lang: es
+
+# SEO
+author: "Hostal HDQ"
+timezone: America/Santiago
+
+# Excluir archivos del build
+exclude:
+  - README.md
+  - .htaccess
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Configuración de archivos a incluir
+include:
+  - robots.txt
+  - sitemap.xml
+  - favicon.png
+  - .htaccess
